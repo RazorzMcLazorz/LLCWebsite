@@ -1,12 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import * as actions from '../reducers/actions'
 
-export default class App extends Component {
+class App extends Component {
+
   render() {
     return (
-      <div className='app'>
-        <h1>DevCamp React Starter</h1>
-        <h2>React Redux Router</h2>
+      <div>
+        {this.props.start}
       </div>
     );
   }
 }
+
+const mapStateToProps = (state) => {
+    return state
+}
+App = connect(mapStateToProps, actions)(App);
+export default App;
