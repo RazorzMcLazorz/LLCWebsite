@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../reducers/actions'
+import Footer from './parts/footer'
 
 class App extends Component {
 
@@ -41,10 +42,12 @@ class App extends Component {
           <div id='rightColumnApp'>
             {/* Right column */}
             <div className='rotatedRight'>
+              <div className='arrow'/>
               Contact me
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }
