@@ -25,7 +25,7 @@ class App extends Component {
             <div id='skillsApp'>
               {/* Top Row */}
               <div id='content'>
-                Skills
+                Projects
               </div>
             </div>
             <div id='nameApp'>
@@ -35,7 +35,7 @@ class App extends Component {
             <div id='projectApp'>
               {/* Bottom Row */}
               <div id='content'>
-                Projects
+                Contact Me
               </div>
             </div>
           </div>
@@ -43,7 +43,7 @@ class App extends Component {
             {/* Right column */}
             <div className='rotatedRight'>
               <div className='arrow'/>
-              Contact me
+              My Skills
             </div>
           </div>
         </div>

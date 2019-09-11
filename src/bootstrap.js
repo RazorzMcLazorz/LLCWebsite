@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import reducers from './reducers'
 
 import App from './components/app'
+import HomeMob from './components/homeMob'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore)
 
@@ -17,8 +18,10 @@ function main() {
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={App} />
-         </Switch>
+          { screen.width >= 600 ?
+          <Route exact path="/" component={App} /> : 
+          <Route exact path="/" component={HomeMob} /> }
+        </Switch>
       </BrowserRouter>
     </Provider>
     , document.querySelector('.app-wrapper'))
