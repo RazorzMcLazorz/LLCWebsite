@@ -7,6 +7,7 @@ import reducers from './reducers'
 
 import App from './components/app'
 import HomeMob from './components/homeMob'
+import Wall from './components/wall'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore)
 
@@ -21,6 +22,9 @@ function main() {
           { screen.width >= 600 ?
           <Route exact path="/" component={App} /> : 
           <Route exact path="/" component={HomeMob} /> }
+
+          <Route exact path="/wall" component={Wall}/>
+
         </Switch>
       </BrowserRouter>
     </Provider>

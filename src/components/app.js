@@ -24,7 +24,7 @@ class App extends Component {
             {/* Middle column */}
             <div id='skillsApp'>
               {/* Top Row */}
-              <div id='content'>
+              <div id='content' href="http://localhost:3000/wall">
                 Projects
               </div>
             </div>
