@@ -18,11 +18,11 @@ function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
-        { screen.width >= 600 ?
+        { screen.width > 600 ?
           <Switch>
             <Route exact path="/" component={App} />  
-            <Route exact path="/" component={Wall}
-          </Switch>:
+            <Route exact path="/wall" component={Wall} />
+          </Switch> :
           <Switch>
             <Route exact path="/" component={HomeMob} /> 
           </Switch>}
