@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../reducers/actions'
 import Footer from './parts/footer'
+import { Link } from 'react-router-dom'
 
 class App extends Component {
 
@@ -24,9 +25,9 @@ class App extends Component {
             {/* Middle column */}
             <div id='skillsApp'>
               {/* Top Row */}
-              <div id='content'>
+              <Link id='content' to="wall">
                 Projects
-              </div>
+              </Link>
             </div>
             <div id='nameApp'>
               {/* Middle Row */}
@@ -34,9 +35,9 @@ class App extends Component {
             </div>
             <div id='projectApp'>
               {/* Bottom Row */}
-              <div id='content'>
+              <Link id='content'>
                 Contact Me
-              </div>
+              </Link>
             </div>
           </div>
           <div id='rightColumnApp'>
