@@ -7,6 +7,7 @@ import reducers from './reducers'
 
 import App from './components/app'
 import HomeMob from './components/homeMob'
+import Wall from './components/wall'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore)
 
