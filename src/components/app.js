@@ -17,9 +17,9 @@ class App extends Component {
           {/* center block */}
           <div id='leftColumnApp'>
             {/* Left column */}
-            <div className='rotatedLeft'>
+            <Link to='/about' className='rotatedLeft'>
               About me
-            </div>
+            </Link>
           </div>
           <div id='middleColumnApp'>
             {/* Middle column */}
@@ -35,17 +35,17 @@ class App extends Component {
             </div>
             <div id='contactApp'>
               {/* Bottom Row */}
-              <div id='content'>
+              <Link to='/contact' id='content'>
                 Contact Me
-              </div>
+              </Link>
             </div>
           </div>
           <div id='rightColumnApp'>
             {/* Right column */}
-            <div className='rotatedRight'>
+            <Link to='/skill' className='rotatedRight'>
               <div className='arrow'/>
               My Skills
-            </div>
+            </Link>
           </div>
         </div>
         <Footer/>

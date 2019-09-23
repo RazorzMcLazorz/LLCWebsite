@@ -8,6 +8,9 @@ import reducers from './reducers'
 import App from './components/app'
 import HomeMob from './components/homeMob'
 import Wall from './components/wall'
+import Skills from './components/skills'
+import About from './components/about'
+import Contact from './components/contact'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore)
 
@@ -22,6 +25,9 @@ function main() {
           <Switch>
             <Route exact path="/" component={App} />  
             <Route exact path="/wall" component={Wall} />
+            <Route exact path="/skills" component={Skills} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contact" component={Contact} />
           </Switch> :
           <Switch>
             <Route exact path="/" component={HomeMob} /> 
