@@ -25,7 +25,7 @@ class App extends Component {
             {/* Middle column */}
             <div id='projectApp'>
               {/* Top Row */}
-              <Link to='/wall' id='content'>
+              <Link to='/wall' className='content'>
                 Projects
               </Link>
             </div>
@@ -35,7 +35,7 @@ class App extends Component {
             </div>
             <div id='contactApp'>
               {/* Bottom Row */}
-              <Link to='/contact' id='content'>
+              <Link to='/contact' className='content'>
                 Contact Me
               </Link>
             </div>

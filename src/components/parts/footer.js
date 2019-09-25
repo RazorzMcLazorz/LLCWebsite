@@ -6,7 +6,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <div id='footer'>
+      <div id='footer' style={{ cursor: 'default' }}>
         <div id='footerLeft'>
           Created using React.js
         </div>
