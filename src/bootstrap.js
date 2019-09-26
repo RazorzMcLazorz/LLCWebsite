@@ -21,17 +21,13 @@ function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
-        { screen.width > 600 ?
-          <Switch>
-            <Route exact path="/" component={App} />  
-            <Route exact path="/wall" component={Wall} />
-            <Route exact path="/skills" component={Skills} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
-          </Switch> :
-          <Switch>
-            <Route exact path="/" component={HomeMob} /> 
-          </Switch>}
+        <Switch>
+          <Route exact path="/" component={App} />  
+          <Route exact path="/wall" component={Wall} />
+          <Route exact path="/skills" component={Skills} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
       </BrowserRouter>
     </Provider>
     , document.querySelector('.app-wrapper'))
