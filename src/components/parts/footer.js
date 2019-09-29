@@ -7,12 +7,19 @@ class Footer extends Component {
   render() {
     return (
       <div id='footer' style={{ cursor: 'default' }}>
-        <div id='footerLeft'>
-          Created using React.js
+        { screen.width > 600 ?
+        <div>
+          <div id='footerLeft'>
+            Created using React.js
+          </div>
+          <div id='footerRight'>
+            Version: 0.0
+          </div>
+        </div> :
+        <div>
+          
         </div>
-        <div id='footerRight'>
-          Version: 0.0
-        </div>
+        }
       </div>
     );
   }

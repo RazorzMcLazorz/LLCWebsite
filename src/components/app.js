@@ -4,30 +4,19 @@ import * as actions from '../reducers/actions'
 import Footer from './parts/footer'
 import { Link } from 'react-router-dom'
 
-class App extends Component {
+class Home extends Component {
 
   state = {
-    Mobile : screen.width
   }
 
-  componentDidMount() {
-    window.addEventListener("resize", this.resize.bind(this));
-    this.resize();
-  }
-
-  resize() {
-    let currentHideNav = (window.innerWidth <= 600);
-    if (currentHideNav !== this.state.Mobile) {
-        this.setState({Mobile: currentHideNav});
-    }
-}
-
-  DesktopMain = () => {
-    return(
-    <div id='desktopMain'>
-      <div id='center'>
-        {/* center block */}
-        <div id='leftColumnApp'>
+  render() {
+    return (
+      <div id='Home'>
+        { screen.width > 600 ?
+        // Desktop
+        <div id='Desktop'>
+          {/* center block */}
+          <div id='leftColumnApp'>
           {/* Left column */}
           <Link to='/about' className='rotatedLeft'>
             About me
@@ -59,24 +48,26 @@ class App extends Component {
             My Skills
           </Link>
         </div>
-      </div>
+      </div> : 
+      // Mobile
+      <div>
+        <div>
+          Nathaniel P. Young
+        </div>
+        <div>
+          About Me
+        </div>
+        <div>
+          Projects
+        </div>
+        <div>
+          Skills
+        </div>
+        <div>
+          Contact Me
+        </div>
+      </div>}
       <Footer/>
-    </div>)
-  }
-  MobileMain = () => {
-    return (<div>
-      hi
-    </div>)
-  }
-
-  render() {
-    return (
-    <div>
-      {
-        this.state.Mobile > 600 ? 
-          this.DesktopMain() :
-          this.MobileMain()
-      }
     </div>
     );
   }
@@ -85,5 +76,5 @@ class App extends Component {
 const mapStateToProps = (state) => {
     return state
 }
-App = connect(mapStateToProps, actions)(App);
-export default App;
+Home = connect(mapStateToProps, actions)(Home);
+export default Home;
