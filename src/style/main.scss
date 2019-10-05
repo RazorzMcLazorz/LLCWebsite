@@ -1,7 +1,15 @@
 @import 'app';
 @import 'footer';
 @import 'homeMob';
+@import 'wall';
 
 * {
     font-family: 'Playfair Display', serif;
   }
+
+.presetBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2a2a2a;
+  color: white;
+}

@@ -6,13 +6,37 @@ import Footer from './parts/footer'
 class Wall extends Component {
 
   state = {
-    start : 'im the state'
+    projects: {
+      'blackJack' : {
+        title: 'Black Jack',
+        link: '',
+        dedicatedPage: '',
+        summary: ''
+      }
+    }
   }
+
+
 
   render() {
     return (
-      <div id='wall'>
-          Wall
+      <div className='presetBackground'>
+        <div id='wall'>
+          <div id='allProjects'>
+            <div>
+              Best Project
+            </div>
+            <div>
+              Current Projects
+            </div>
+            <div>
+              Past Projects
+            </div>
+          </div>
+          <div id='featuredProjects'>
+            Nav Container
+          </div>
+        </div>
       </div>
     );
   }
