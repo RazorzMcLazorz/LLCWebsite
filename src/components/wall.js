@@ -16,7 +16,15 @@ class Wall extends Component {
     }
   }
 
-
+  project(type) {
+    return(
+      <div>
+        <div>
+          
+        </div>
+      </div>
+    )
+  }
 
   render() {
     return (
@@ -26,6 +34,7 @@ class Wall extends Component {
             <div>
               Best Project
             </div>
+            
             <div>
               Current Projects
             </div>
