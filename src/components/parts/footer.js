@@ -8,7 +8,7 @@ class Footer extends Component {
     return (
       <div id='footer' style={{ cursor: 'default' }}>
         { screen.width > 600 ?
-        <div>
+        <div id='footerDesktop'>
           <div id='footerLeft'>
             Created using React.js
           </div>

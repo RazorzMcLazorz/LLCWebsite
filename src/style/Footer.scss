@@ -5,13 +5,15 @@
     padding-left: 5px;
     padding-right: 5px;
     color: #969696;
-    #footerLeft {
-        display: flex;
-        width: 50%;
-    }
-    #footerRight {
-        display: flex;
-        justify-content: flex-end;
-        width: 50%;
+    #footerDesktop {
+        #footerLeft {
+            display: flex;
+            width: 50%;
+        }
+        #footerRight {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+        }
     }
 }

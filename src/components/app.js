@@ -14,7 +14,7 @@ class Home extends Component {
       <div id='Home'>
         { screen.width > 600 ?
         // Desktop
-        <div id='Desktop'>
+        <div id='DesktopHome'>
           {/* center block */}
           <div id='leftColumnApp'>
           {/* Left column */}
@@ -50,7 +50,7 @@ class Home extends Component {
         </div>
       </div> : 
       // Mobile
-      <div>
+      <div id='MobileHome'>
         <div>
           Nathaniel P. Young
         </div>

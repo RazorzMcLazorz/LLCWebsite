@@ -7,11 +7,20 @@ class Wall extends Component {
 
   state = {
     projects: {
-      'blackJack' : {
-        title: 'Black Jack',
-        link: '',
-        dedicatedPage: '',
-        summary: ''
+      projects : [
+        'blacjack',
+      ],
+      title: {
+        'blackjack' : 'Black Jack',
+      },
+      link: {
+        'blackjack' : '',
+      },
+      dedicate: {
+        'blackjack' : '',
+      },
+      summary:{
+        'blackjack' : '',
       }
     }
   }
