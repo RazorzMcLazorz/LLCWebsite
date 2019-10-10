@@ -59,7 +59,9 @@ class Wall extends Component {
             <div>
               Best Project
             </div>
-            
+            <div>
+              {this.project(this.state.projects.projects[0])}
+            </div>
             <div>
               Current Projects
             </div>
@@ -71,6 +73,7 @@ class Wall extends Component {
             Nav Container
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }
