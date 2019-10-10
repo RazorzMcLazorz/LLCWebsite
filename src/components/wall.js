@@ -10,6 +10,9 @@ class Wall extends Component {
       projects : [
         'blacjack',
       ],
+      type: {
+        'blackjack' : 'best'
+      },
       title: {
         'blackjack' : 'Black Jack',
       },
@@ -20,16 +23,29 @@ class Wall extends Component {
         'blackjack' : '',
       },
       summary:{
-        'blackjack' : '',
+        'blackjack' : 'im the summary',
       }
     }
   }
 
-  project(type) {
+  project(project) {
     return(
-      <div>
-        <div>
-          
+      <div className='project'>
+        <div className='project-title'>
+          {this.state.projects.title[project]}
+        </div>
+        <div className='project-details'>
+          <div>
+            {this.state.projects.summary[project]}
+          </div>
+          <div>
+            <div>
+              {/* button component */}
+            </div>
+            <div>
+              {/* button component */}
+            </div>
+          </div>
         </div>
       </div>
     )
