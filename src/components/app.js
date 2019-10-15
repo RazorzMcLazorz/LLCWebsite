@@ -18,6 +18,7 @@ class Home extends Component {
           {/* center block */}
           <div id='leftColumnApp'>
           {/* Left column */}
+          <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
           <Link to='/about' className='rotatedLeft'>
             About me
           </Link>
