@@ -6,7 +6,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import reducers from './reducers'
 
 import App from './components/app'
-import HomeMob from './components/homeMob'
 import Wall from './components/wall'
 import Skills from './components/skills'
 import About from './components/about'
