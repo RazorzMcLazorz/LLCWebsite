@@ -46,7 +46,7 @@ class Home extends Component {
         </div>
         <div id='rightColumnApp'>
           {/* Right column */}
-          <Link to='/skill' className='rotatedRight'>
+          <Link to='/skills' className='rotatedRight'>
             <div className='arrow'/>
             My Skills
           </Link>
