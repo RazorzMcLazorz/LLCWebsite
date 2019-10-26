@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../reducers/actions'
 import Footer from './parts/footer'
+import NavBar from './parts/navbar'
 
 class Skills extends Component {
 
@@ -13,11 +14,12 @@ class Skills extends Component {
     return (
       <div id='skills' className='presetBackground'>
           <div className='skillsLeft'/>
+            <NavBar/>
           <div className='skillsMiddle'>
             <div className='skillsBox'>
               <div className='skillsBoxHeader'>Javascript</div>
               <div className='skillsBoxContent'>
-                With JavaScript, I've spent about 6+ Weeks learning, building stuff on repl.it, CodePen, Visual Studio Code making the Basic Html CSS Websites, and React / Redux.
+                With JavaScript, I've spent about 6+ Weeks learning, building stuff on repl.it, CodePen, Visual Studio Code making the Basic Html CSS Websites, and React / Redux. React is what allows websites to be needed loaded once so its smooth transition between pages. With React I know how to manage the State and the this statement while within the class components. Redux is an addition to React to allow everything to be put into the store and distriputed to all files allowing seemless data transfer instead of importing.
               </div>
             </div>
             <div className='skillsBox'>
