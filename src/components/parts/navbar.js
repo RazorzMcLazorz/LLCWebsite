@@ -8,11 +8,9 @@ class NavBar extends Component {
   render() {
     return (
       <div id='NavBar'>
-        <div className='backto'>
-          <Link to='/'>
-            return
-          </Link>
-        </div>
+        <Link className='NavBarBack' to='/'>
+          <i className="fas fa-chevron-left"></i>
+        </Link>
       </div>
     );
   }

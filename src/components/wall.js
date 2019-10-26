@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../reducers/actions'
 import Footer from './parts/footer'
+import NavBar from './parts/navbar'
 
 class Wall extends Component {
 
@@ -54,6 +55,7 @@ class Wall extends Component {
   render() {
     return (
       <div className='presetBackground'>
+        <NavBar/>
         <div id='wall'>
           <div id='allProjects'>
             <div>

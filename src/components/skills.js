@@ -42,6 +42,7 @@ class Skills extends Component {
             </div>
           </div>
           <div className='skillsRight'/>
+          <Footer/>
       </div>
     );
   }

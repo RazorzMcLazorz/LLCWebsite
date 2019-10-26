@@ -1,19 +1,15 @@
 #skills {
     display: flex;
     justify-content: center;
-    width: 100vw;
-    overflow-y: scroll;
+    width: 100%;
     .skillsLeft{
-        width: 10%;
     }
     .skillsMiddle{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
     .skillsRight{
-        width: 10%;
     }
 }
 

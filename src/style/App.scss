@@ -18,6 +18,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      margin-right: 25px;
       .rotatedLeft {
         transform: rotate(-0.25turn);
         border: solid;
@@ -41,6 +42,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 25px;
     .rotatedRight {
       transform: rotate(0.25turn);
       border: solid;
@@ -78,6 +80,7 @@
       justify-content: center;
       align-items: flex-end;
       height: 33%;
+      margin-bottom: 25px;
       .content {
         border: solid;
         border-color: #44d9e6;
@@ -110,6 +113,7 @@
         justify-content: center;
         align-items: flex-start;
         height: 33%;
+        margin-top: 25px;
         .content {
           border: solid;
           border-color: #44d9e6;

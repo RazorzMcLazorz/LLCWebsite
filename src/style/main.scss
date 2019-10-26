@@ -3,14 +3,10 @@
 @import 'homeMob';
 @import 'wall';
 @import 'skills';
+@import 'NavBar';
 
 * {
     font-family: sans-serif;
+    background-color: #2a2a2a;
+    color: white;
   }
-
-.presetBackground {
-  width: 100vw;
-  height: 100vh;
-  background-color: #2a2a2a;
-  color: white;
-}
