@@ -35,7 +35,9 @@ class Home extends Component {
           </div>
           <div id='nameApp'>
             {/* Middle Row */}
-            Nathaniel P. Young
+            <div className='shake'>
+              Nathaniel P. Young
+            </div>
           </div>
           <div id='contactApp'>
             {/* Bottom Row */}
