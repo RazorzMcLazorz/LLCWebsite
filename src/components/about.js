@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../reducers/actions'
 import Footer from './parts/footer'
+import NavBar from './parts/navbar'
 
 class About extends Component {
 
@@ -11,8 +12,11 @@ class About extends Component {
 
   render() {
     return (
-      <div id='about'>
+      <div>
+        <NavBar/>
+        <div id='about'>
           About
+        </div>
       </div>
     );
   }
