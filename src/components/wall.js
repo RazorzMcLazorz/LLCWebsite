@@ -75,7 +75,6 @@ class Wall extends Component {
             Nav Container
           </div>
         </div>
-        <Footer/>
       </div>
     );
   }
