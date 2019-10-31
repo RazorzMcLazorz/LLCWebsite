@@ -58,21 +58,21 @@ class Wall extends Component {
         <NavBar/>
         <div id='wall'>
           <div id='allProjects'>
-            <div>
-              Best Project
+            <div className='projectBox'>
+              <div className='projectBoxHeader'>
+                Best Project
+              </div>
             </div>
-            <div>
-              {this.project(this.state.projects.projects[0])}
+            <div className='projectBox'>
+              <div className='projectBoxHeader'>
+                Current Projects
+              </div>
             </div>
-            <div>
-              Current Projects
+            <div className='projectBox'>
+              <div className='projectBoxHeader'>
+                Past Projects
+              </div>
             </div>
-            <div>
-              Past Projects
-            </div>
-          </div>
-          <div id='featuredProjects'>
-            Nav Container
           </div>
         </div>
       </div>
