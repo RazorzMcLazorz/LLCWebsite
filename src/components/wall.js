@@ -54,7 +54,7 @@ class Wall extends Component {
 
   render() {
     return (
-      <div className='presetBackground'>
+      <div>
         <NavBar/>
         <div id='wall'>
           <div id='allProjects'>

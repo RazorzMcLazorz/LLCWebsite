@@ -12,8 +12,7 @@ class Skills extends Component {
 
   render() {
     return (
-      <div id='skills' className='presetBackground'>
-          <div className='skillsLeft'/>
+      <div id='skills'>
             <NavBar/>
           <div className='skillsMiddle'>
             <div className='skillsBox'>
@@ -41,8 +40,6 @@ class Skills extends Component {
               </div>
             </div>
           </div>
-          <div className='skillsRight'/>
-          <Footer/>
       </div>
     );
   }
