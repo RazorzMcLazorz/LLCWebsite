@@ -8,6 +8,9 @@ class Wall extends Component {
 
   state = {
     bestProject: ['blackjack'],
+    currentProject: [],
+    pastOtherProject: [],
+    pastPersonalProject: [],
     projects: {
       title: {
         'blackjack' : 'Black Jack',
@@ -67,11 +70,19 @@ class Wall extends Component {
               <div className='projectBoxHeader'>
                 Current Projects
               </div>
+              {this.project(this.state.currentProject[0])}
             </div>
             <div className='projectBox'>
               <div className='projectBoxHeader'>
                 Past Projects
               </div>
+              {this.project(this.state.pastOtherProject[0])}
+            </div>
+            <div className='projectBox'>
+              <div className='projectBoxHeader'>
+                Past Personal Projects
+              </div>
+              {this.project(this.state.pastPersonalProject[0])}
             </div>
           </div>
         </div>
