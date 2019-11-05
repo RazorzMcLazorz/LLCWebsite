@@ -7,21 +7,16 @@ import NavBar from './parts/navbar'
 class Wall extends Component {
 
   state = {
+    bestProject: ['blackjack'],
     projects: {
-      projects : [
-        'blacjack',
-      ],
-      type: {
-        'blackjack' : 'best'
-      },
       title: {
         'blackjack' : 'Black Jack',
       },
       link: {
-        'blackjack' : '',
+        'blackjack' : '/',
       },
       dedicate: {
-        'blackjack' : '',
+        'blackjack' : '/',
       },
       summary:{
         'blackjack' : 'im the summary',
@@ -61,6 +56,9 @@ class Wall extends Component {
             <div className='projectBox'>
               <div className='projectBoxHeader'>
                 Best Project
+              </div>
+              <div>
+                {this.project(this.state.bestProject[0])}
               </div>
             </div>
             <div className='projectBox'>
