@@ -13,13 +13,13 @@ class Wall extends Component {
         'blackjack' : 'Black Jack',
       },
       link: {
-        'blackjack' : '/',
+        'blackjack' : 'https://black-jack-website.herokuapp.com/',
       },
       dedicate: {
-        'blackjack' : '/',
+        'blackjack' : '',
       },
       summary:{
-        'blackjack' : 'im the summary',
+        'blackjack' : 'Complete working Black Jack Game online, it will soon be hosted as an app on google play store, after I add animations and sound to the game itself. this game is created in React.JS, it takes the complete knowledge of my coding with JavaScript and React.JS combines it into one to build this fun game.',
       }
     }
   }
@@ -31,16 +31,20 @@ class Wall extends Component {
           {this.state.projects.title[project]}
         </div>
         <div className='project-details'>
-          <div>
+          <div className='project-description'>
             {this.state.projects.summary[project]}
           </div>
-          <div>
-            <div>
-              {/* button component */}
-            </div>
-            <div>
-              {/* button component */}
-            </div>
+          <div className='project-buttons'>
+            {this.state.projects.link[project] &&
+              <a className='project-button-component' onMouseOver={() => console.log('mouseover')} target="_blank" href={this.state.projects.link[project]}>
+                 <i className="fas fa-pager"></i>
+              </a>
+            }
+            {this.state.projects.dedicate[project] &&
+              <a className='project-button-component' href={this.state.projects.dedicate[project]}>
+                <i className="far fa-newspaper"></i>
+              </a>
+            }
           </div>
         </div>
       </div>
@@ -57,9 +61,7 @@ class Wall extends Component {
               <div className='projectBoxHeader'>
                 Best Project
               </div>
-              <div>
-                {this.project(this.state.bestProject[0])}
-              </div>
+              {this.project(this.state.bestProject[0])} 
             </div>
             <div className='projectBox'>
               <div className='projectBoxHeader'>
