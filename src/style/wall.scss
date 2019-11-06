@@ -48,6 +48,11 @@
         margin-left: 10px;
         font-size: 120%;
     }
+    .project-date {
+        display: flex;
+        width: 100%;
+        font-size: 70%;
+    }
     .project-details {
         display: flex;
         width: 90%;
@@ -69,6 +74,10 @@
                 border-radius: 45%;
                 margin: 15px;
                 cursor: pointer;
+                text-decoration: none;
+                i {
+                    font-size: 200%;
+                }
             }
             .project-button-component:hover {
                 background-color: #333333;
