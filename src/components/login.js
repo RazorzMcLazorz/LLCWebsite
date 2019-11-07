@@ -14,8 +14,8 @@ class About extends Component {
     return (
       <div>
         <NavBar/>
-        <div id='about'>
-          About
+        <div id='login'>
+          Login
         </div>
       </div>
     );

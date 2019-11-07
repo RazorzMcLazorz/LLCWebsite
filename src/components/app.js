@@ -21,8 +21,8 @@ class Home extends Component {
           <div id='leftColumnApp'>
           {/* Left column */}
           
-          <Link to='/about' className='rotatedLeft'>
-            About me
+          <Link to='/login' className='rotatedLeft'>
+            Login
           </Link>
         </div>
         <div id='middleColumnApp'>
