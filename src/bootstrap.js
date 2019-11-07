@@ -6,7 +6,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import reducers from './reducers'
 
 import App from './components/app'
-import Wall from './components/wall'
+import Projects from './components/projects'
 import Skills from './components/skills'
 import Login from './components/login'
 import Contact from './components/contact'
@@ -22,7 +22,7 @@ function main() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={App} />  
-          <Route exact path="/wall" component={Wall} />
+          <Route exact path="/projects" component={Projects} />
           <Route exact path="/skills" component={Skills} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/contact" component={Contact} />

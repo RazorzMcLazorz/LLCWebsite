@@ -4,7 +4,7 @@ import * as actions from '../reducers/actions'
 import Footer from './parts/footer'
 import NavBar from './parts/navbar'
 
-class About extends Component {
+class Login extends Component {
 
   state = {
     start : 'im the state'
@@ -25,5 +25,5 @@ class About extends Component {
 const mapStateToProps = (state) => {
     return state
 }
-About = connect(mapStateToProps, actions)(About);
-export default About;
+Login = connect(mapStateToProps, actions)(Login);
+export default Login;

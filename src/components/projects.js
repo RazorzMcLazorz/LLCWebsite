@@ -4,7 +4,7 @@ import * as actions from '../reducers/actions'
 import Footer from './parts/footer'
 import NavBar from './parts/navbar'
 
-class Wall extends Component {
+class Projects extends Component {
 
   state = {
     bestProject: ['blackjack'],
@@ -84,7 +84,7 @@ class Wall extends Component {
     return (
       <div>
         <NavBar/>
-        <div id='wall'>
+        <div id='projectWall'>
           <div id='allProjects'>
             <div className='projectBox'>
               <div className='projectBoxHeader'>
@@ -128,5 +128,5 @@ class Wall extends Component {
 const mapStateToProps = (state) => {
     return state
 }
-Wall = connect(mapStateToProps, actions)(Wall);
-export default Wall;
+Projects = connect(mapStateToProps, actions)(Projects);
+export default Projects;
