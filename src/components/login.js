@@ -17,8 +17,8 @@ class Login extends Component {
         <NavBar/>
         <div id='login'>
           <form>
-            <input type='text' name='email' value={this.state.emailLogin} autofocus onChange={(val) => this.setState({emailLogin : val.target.value})}/>
-            <input type='text' name='password' value={this.state.passwordLogin}/>
+            <input type='text' name='email' value={this.state.emailLogin} autoFocus onChange={(val) => this.setState({emailLogin : val.currentTarget.value})}/>
+            <input type='text' name='password' value={this.state.passwordLogin} onChange={(val) => this.setState({passwordLogin : val.currentTarget.value})}/>
             <input type='submit'/>
           </form>
         </div>
