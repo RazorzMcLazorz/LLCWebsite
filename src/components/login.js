@@ -7,7 +7,8 @@ import NavBar from './parts/navbar'
 class Login extends Component {
 
   state = {
-    start : 'im the state'
+    emailLogin : 'sdajkhsdjka',
+    passwordLogin: ''
   }
 
   render() {
@@ -15,7 +16,11 @@ class Login extends Component {
       <div>
         <NavBar/>
         <div id='login'>
-          Login
+          <form>
+            <input type='text' name='email' value={this.state.emailLogin} autofocus onChange={(val) => this.setState({emailLogin : val.target.value})}/>
+            <input type='text' name='password' value={this.state.passwordLogin}/>
+            <input type='submit'/>
+          </form>
         </div>
       </div>
     );
