@@ -7,7 +7,7 @@ import NavBar from './parts/navbar'
 class Login extends Component {
 
   state = {
-    emailLogin : 'sdajkhsdjka',
+    emailLogin : '',
     passwordLogin: ''
   }
 
@@ -16,10 +16,10 @@ class Login extends Component {
       <div>
         <NavBar/>
         <div id='login'>
-          <form>
-            <input type='text' name='email' value={this.state.emailLogin} autoFocus onChange={(val) => this.setState({emailLogin : val.currentTarget.value})}/>
-            <input type='text' name='password' value={this.state.passwordLogin} onChange={(val) => this.setState({passwordLogin : val.currentTarget.value})}/>
-            <input type='submit'/>
+          <form style={{marginTop: 50}}>
+            <input className='textBox' type='email' name='email' value={this.state.emailLogin} autoFocus onChange={(val) => this.setState({emailLogin : val.currentTarget.value})}/>
+            <input className='textBox' type='password' name='password' value={this.state.passwordLogin} onChange={(val) => this.setState({passwordLogin : val.currentTarget.value})}/>
+            <input className='submitBox' type='submit' value='Login' onClick={() => this.props.history("/")}/>
           </form>
         </div>
       </div>
