@@ -13,45 +13,26 @@ class HomeMob extends Component {
 
   render() {
     return (
-      <div id='Home'>
-        <div id='DesktopHome'>
-          {/* center block */}
-          <div id='leftColumnApp'>
-          {/* Left column */}
-          
-          <Link to='/login' className='rotatedLeft'>
-            Login
-          </Link>
-        </div>
-        <div id='middleColumnApp'>
-          {/* Middle column */}
-          <div id='projectApp'>
-            {/* Top Row */}
-            <Link to='/wall' className='content'>
+      <div id='homeMob'>
+        <div id='mobile'>
+          <div id='mobileName'>
+            Nathaniel P. Young
+          </div>
+          <div id='mobileLinks'>
+            <Link to='/wall' className='mobileLinkButtons'>
               Projects
             </Link>
-          </div>
-          <div id='nameApp'>
-            {/* Middle Row */}
-            <div className='shake'>
-              Nathaniel P. Young
-            </div>
-          </div>
-          <div id='contactApp'>
-            {/* Bottom Row */}
-            <Link to='/contact' className='content'>
+            <Link to='/skills' className='mobileLinkButtons'>
+              My Skills
+            </Link>
+            <Link to='/login' className='mobileLinkButtons'>
+              Login
+            </Link>
+            <Link to='/contact' className='mobileLinkButtons'>
               Contact Me
             </Link>
           </div>
         </div>
-        <div id='rightColumnApp'>
-          {/* Right column */}
-          <Link to='/skills' className='rotatedRight'>
-            <div className='arrow'/>
-            My Skills
-          </Link>
-        </div>
-      </div>
       <Footer/>
     </div>
     );

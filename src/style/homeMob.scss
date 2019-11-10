@@ -1,0 +1,41 @@
+// beginning page people see
+#homeMob {
+  background-color: #2a2a2a;
+  color: white;
+  #mobile {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #mobileName {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 25%;
+    }
+    #mobileLinks {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 75%;
+      .mobileLinkButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 130%;
+        height: 40px;
+        border: solid;
+        background-color: #2a2a2a;
+        border-color: #44d9e6;
+        border-width: 0;
+        border-bottom-width: 1px;
+        border-radius: 15%;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
