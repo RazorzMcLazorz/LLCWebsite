@@ -5,11 +5,13 @@ import { createStore, applyMiddleware } from 'redux'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import reducers from './reducers'
 
-import App from './components/app'
+import Home from './components/home'
 import Projects from './components/projects'
 import Skills from './components/skills'
 import Login from './components/login'
 import Contact from './components/contact'
+
+import HomeMob from './components/homeMob'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore)
 
@@ -17,16 +19,22 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './style/main.scss'
 
 function main() {
+  console.log(screen.width)
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
+        {screen.width < 600 ?
         <Switch>
-          <Route exact path="/" component={App} />  
+          <Route exact path="/" component={HomeMob}/>
+          <Route exact path="/login" component={Login} />
+        </Switch>:
+        <Switch>
+          <Route exact path="/" component={Home} />  
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/skills" component={Skills} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/contact" component={Contact} />
-        </Switch>
+        </Switch>}
       </BrowserRouter>
     </Provider>
     , document.querySelector('.app-wrapper'))

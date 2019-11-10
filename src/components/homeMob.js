@@ -4,7 +4,7 @@ import * as actions from '../reducers/actions'
 import Footer from './parts/footer'
 import { Link } from 'react-router-dom'
 
-class Home extends Component {
+class HomeMob extends Component {
 
   state = {
   }
@@ -14,8 +14,6 @@ class Home extends Component {
   render() {
     return (
       <div id='Home'>
-        { screen.width > 600 ?
-        // Desktop
         <div id='DesktopHome'>
           {/* center block */}
           <div id='leftColumnApp'>
@@ -53,25 +51,7 @@ class Home extends Component {
             My Skills
           </Link>
         </div>
-      </div> : 
-      // Mobile
-      <div id='MobileHome'>
-        <div>
-          Nathaniel P. Young
-        </div>
-        <div>
-          About Me
-        </div>
-        <div>
-          Projects
-        </div>
-        <div>
-          Skills
-        </div>
-        <div>
-          Contact Me
-        </div>
-      </div>}
+      </div>
       <Footer/>
     </div>
     );
@@ -81,5 +61,5 @@ class Home extends Component {
 const mapStateToProps = (state) => {
     return state
 }
-Home = connect(mapStateToProps, actions)(Home);
-export default Home;
+HomeMob = connect(mapStateToProps, actions)(HomeMob);
+export default HomeMob;
