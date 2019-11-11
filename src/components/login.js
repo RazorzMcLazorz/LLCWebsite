@@ -11,6 +11,14 @@ class Login extends Component {
     passwordLogin: ''
   }
 
+  login = () => {
+    this.props.changeState({ 
+      email: this.state.emailLogin,
+      password: this.state.passwordLogin
+    })
+    this.props.history('/')
+  }
+
   render() {
     return (
       <div>
@@ -19,7 +27,7 @@ class Login extends Component {
           <form style={{marginTop: 50}}>
             <input className='textBox' type='email' name='email' value={this.state.emailLogin} autoFocus onChange={(val) => this.setState({emailLogin : val.currentTarget.value})}/>
             <input className='textBox' type='password' name='password' value={this.state.passwordLogin} onChange={(val) => this.setState({passwordLogin : val.currentTarget.value})}/>
-            <input className='submitBox' type='submit' value='Login' onClick={() => this.props.history("/")}/>
+            <input className='submitBox' type='submit' value='Login' onClick={() => this.login}/>
           </form>
         </div>
       </div>

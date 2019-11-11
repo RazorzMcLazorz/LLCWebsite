@@ -19,7 +19,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './style/main.scss'
 
 function main() {
-  console.log(screen.width)
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>

@@ -17,6 +17,7 @@ class HomeMob extends Component {
         <div id='mobile'>
           <div id='mobileName'>
             Nathaniel P. Young
+            {this.props.email}
           </div>
           <div id='mobileLinks'>
             <Link to='/wall' className='mobileLinkButtons'>
