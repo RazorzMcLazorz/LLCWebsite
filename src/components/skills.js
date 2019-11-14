@@ -13,7 +13,8 @@ class Skills extends Component {
   render() {
     return (
       <div id='skills'>
-            <NavBar/>
+        <NavBar/>
+        <div id='skillsDetails'>
           <div className='skillsMiddle'>
             <div className='skillsBox'>
               <div className='skillsBoxHeader'>Javascript</div>
@@ -40,6 +41,7 @@ class Skills extends Component {
               </div>
             </div>
           </div>
+        </div>
       </div>
     );
   }
