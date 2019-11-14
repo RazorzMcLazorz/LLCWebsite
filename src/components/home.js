@@ -27,7 +27,7 @@ class Home extends Component {
           {/* Middle column */}
           <div id='projectApp'>
             {/* Top Row */}
-            <Link to='/wall' className='content'>
+            <Link to='/projects' className='content'>
               Projects
             </Link>
           </div>

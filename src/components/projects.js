@@ -46,6 +46,7 @@ class Projects extends Component {
   }
 
   project(project) {
+    
     return(
       <div className='project'>
         <div className='project-title'>
@@ -86,38 +87,47 @@ class Projects extends Component {
         <NavBar/>
         <div id='projectWall'>
           <div id='allProjects'>
-            <div className='projectBox'>
+
+            { this.state.bestProject &&
+              <div className='projectBox'>
               <div className='projectBoxHeader'>
                 Best Project
               </div>
-              {this.state.bestProject.map(project=>
-                this.project(project)
+              {this.state.bestProject.map((project, key)=>
+                <div key={key}> {this.project(project)}</div>
               )} 
-            </div>
-            <div className='projectBox'>
+            </div>}
+
+            { this.state.currentProject &&
+              <div className='projectBox'>
               <div className='projectBoxHeader'>
                 Current Projects
               </div>
-              {this.state.currentProject.map(project=>
-                this.project(project)
+              {this.state.currentProject.map((project, key)=>
+                <div key={key}> {this.project(project)}</div>
               )} 
-            </div>
+            </div>}
+
+           {  this.state.pastOtherProject &&
             <div className='projectBox'>
               <div className='projectBoxHeader'>
                 Past Projects
               </div>
-              {this.state.pastOtherProject.map(project=>
-                this.project(project)
+              {this.state.pastOtherProject.map((project, key)=>
+                <div key={key}> {this.project(project)}</div>
               )} 
-            </div>
-            <div className='projectBox'>
+            </div>}
+
+            { this.state.pastPersonalProject &&
+              <div className='projectBox'>
               <div className='projectBoxHeader'>
                 Past Personal Projects
               </div>
-              {this.state.pastPersonalProject.map(project=>
-                this.project(project)
+              {this.state.pastPersonalProject.map((project, key)=>
+                <div key={key}> {this.project(project)}</div>
               )} 
-            </div>
+            </div>}
+
           </div>
         </div>
       </div>
