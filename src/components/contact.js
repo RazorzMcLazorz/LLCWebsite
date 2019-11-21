@@ -24,15 +24,6 @@ class Contact extends Component {
             <div className="MYLinksTop">Manually message me at: </div>
 
             <div className="MYLinksTop3" type="text" id ="email" value="nateyoungdev@gmail.com">nateyoungdev@gmail.com</div>
-
-            <div className="MYLinksTop">To make it faster here's some links to the Emails</div>
-            <div className="EmailLinks">
-                <a href="https://mail.google.com/" target="_blank" className="projects"><img src = "\assets\gmail.png"></img></a>
-                <a href="https://outlook.live.com/owa/" target="_blank" className="projects"><img src = "\assets\Outlook.png"></img></a>
-                <a href="https://overview.mail.yahoo.com/" target="_blank" className="projects"><img src = "\assets\yahoo.png"></img></a>
-                <a href="http://www.inbox.com/tech/" target="_blank" className="projects"><img src = "\assets\inbox.png"></img></a>
-                <a href="https://www.icloud.com/" target="_blank" className="projects"><img src = "\assets\icloud.png"></img></a>
-            </div>
         </div>
       </div>
     );

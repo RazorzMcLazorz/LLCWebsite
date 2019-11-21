@@ -25,7 +25,8 @@ function main() {
         {screen.width < 600 ?
         <Switch>
           <Route exact path="/" component={HomeMob}/>
-          <Route exact path="/login" component={Login} />
+          <Route exact path="/login" component={Login}/>
+          <Route exact path="/contact" component={Contact}/>
         </Switch>:
         <Switch>
           <Route exact path="/" component={Home} />  
