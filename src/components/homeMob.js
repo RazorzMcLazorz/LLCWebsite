@@ -20,7 +20,7 @@ class HomeMob extends Component {
             {this.props.email}
           </div>
           <div id='mobileLinks'>
-            <Link to='/wall' className='mobileLinkButtons'>
+            <Link to='/project' className='mobileLinkButtons'>
               Projects
             </Link>
             <Link to='/skills' className='mobileLinkButtons'>
