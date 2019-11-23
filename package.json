@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-router",
+  "name": "nateyoungdev",
   "version": "1.0.0",
   "description": "Basic skeleton codebase for React/Redux/Router applications.",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:bottega-code-school/js-builder.git"
+    "url": "git+ssh://git@github.com/bottega-code-school/js-builder.git"
   },
   "keywords": [
     "es6",
@@ -85,5 +85,6 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.41.2"
-  }
+  },
+  "main": "web.js"
 }
