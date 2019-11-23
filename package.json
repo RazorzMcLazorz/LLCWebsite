@@ -26,6 +26,9 @@
     "sass",
     "css module"
   ],
+  "engines": {
+    "node": "10.x"
+  },
   "author": "Your Name Here",
   "license": "MIT",
   "bugs": {
