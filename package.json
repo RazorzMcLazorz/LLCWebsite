@@ -27,7 +27,7 @@
     "css module"
   ],
   "engines": {
-    "node": "10.x"
+    "node": "13.1.0"
   },
   "author": "Your Name Here",
   "license": "MIT",
