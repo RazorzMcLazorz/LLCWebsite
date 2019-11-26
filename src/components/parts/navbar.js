@@ -11,6 +11,9 @@ class NavBar extends Component {
         <Link className='NavBarBack' to='/'>
           <i className="fas fa-chevron-left"></i>
         </Link>
+        <div>
+          
+        </div>
       </div>
     );
   }

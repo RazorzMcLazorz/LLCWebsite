@@ -50,7 +50,7 @@ class Projects extends Component {
 
             { this.props.bestProject &&
               <div className='projectBox'>
-              <div className='projectBoxHeader'>
+              <div id='bestProject' className='projectBoxHeader'>
                 Best Project
               </div>
               {this.props.bestProject.map((project, key)=>
@@ -60,7 +60,7 @@ class Projects extends Component {
 
             { this.props.currentProject &&
               <div className='projectBox'>
-              <div className='projectBoxHeader'>
+              <div id='currentProject' className='projectBoxHeader'>
                 Current Projects
               </div>
               {this.props.currentProject.map((project, key)=>
@@ -70,7 +70,7 @@ class Projects extends Component {
 
            {  this.props.pastOtherProject &&
             <div className='projectBox'>
-              <div className='projectBoxHeader'>
+              <div id="pastProject" className='projectBoxHeader'>
                 Past Projects
               </div>
               {this.props.pastOtherProject.map((project, key)=>
