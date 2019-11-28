@@ -13,46 +13,29 @@ class Home extends Component {
 
   render() {
     return (
-      <div id='Home'>
-        <div id='DesktopHome'>
-          {/* center block */}
-          <div id='leftColumnApp'>
-          {/* Left column */}
-          
-          <Link to='/login' className='rotatedLeft'>
+      <div id='home'>
+        <div id='homeNav'>
+          <Link to='projects' className='homeNavLink'>
+            Projects
+          </Link>
+          <Link to='skills' className='homeNavLink'>
+            Skills
+          </Link>
+          <Link to='login' className='homeNavLink'>
             Login
           </Link>
+          <Link to='contact' className='homeNavLink'>
+            Contact
+          </Link>
         </div>
-        <div id='middleColumnApp'>
-          {/* Middle column */}
-          <div id='projectApp'>
-            {/* Top Row */}
-            <Link to='/projects' className='content'>
-              Projects
-            </Link>
-          </div>
-          <div id='nameApp'>
-            {/* Middle Row */}
-            <div className='shake'>
+        <div id='homeBody'>
+          <div className='homeNameBox'>
+            <div className='homeName'>
               Nathaniel P. Young
             </div>
           </div>
-          <div id='contactApp'>
-            {/* Bottom Row */}
-            <Link to='/contact' className='content'>
-              Contact Me
-            </Link>
-          </div>
-        </div>
-        <div id='rightColumnApp'>
-          {/* Right column */}
-          <Link to='/skills' className='rotatedRight'>
-            <div className='arrow'/>
-            My Skills
-          </Link>
-        </div>
+        </div>  
       </div>
-    </div>
     );
   }
 }
