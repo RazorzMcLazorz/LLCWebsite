@@ -4,11 +4,6 @@ import * as actions from '../reducers/actions'
 import Navbar from './parts/navbar'
 
 class Contact extends Component {
-
-  state = {
-    start : 'im the state'
-  }
-
   render() {
     return (
       <div id='contact'>
