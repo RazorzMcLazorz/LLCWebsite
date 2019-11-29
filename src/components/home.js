@@ -7,9 +7,29 @@ import { Link } from 'react-router-dom'
 class Home extends Component {
 
   state = {
+    langColLeft: ['JavaScript', 'Node.js', 'TypeScript', 'React', 'Redux', 'MySQL', 'ClearDB'],
+    langColRight: ['HTML 5', 'CSS', 'SCSS', 'Bash Terminal', 'PowerShell', 'Command Prompt', 'C++'],
+    website: {
+      'JavaScript' : 'https://www.javascript.com/',
+      'Node.js' : 'https://nodejs.org/en/',
+      'TypeScript' : 'https://www.typescriptlang.org/',
+      'React' : 'https://reactjs.org/',
+      'Redux' : 'https://redux.js.org/',
+      'MySQL' : 'https://www.mysql.com/',
+      'ClearDB' : 'https://www.cleardb.com/',
+      'SCSS' : 'https://sass-lang.com/',
+      'PowerShell' : 'https://powershell.org/',
+      'C++' : 'http://www.cplusplus.com/'
+    }
   }
 
-  // Swapp Original Website into this and this new one to mobile
+  languages(lang) {
+    return(
+      <a target='_blank' href={this.state.website[lang]} className='homeLanguagesListColumnItem'>
+        {lang}
+      </a>
+    )
+  }
 
   render() {
     return (
@@ -30,8 +50,29 @@ class Home extends Component {
         </div>
         <div id='homeBody'>
           <div className='homeNameBox'>
-            <div className='homeName'>
+            <h1 className='homeName'>
               Nathaniel P. Young
+            </h1>
+          </div>
+          <div className='homeLanguages'>
+            <div className='homeLanguagesName'>
+              Languages I Know
+            </div>
+            <div className='homeLanguagesList'>
+              <div className='homeLanguagesListColumn'>
+              {this.state.langColLeft.map((project, key) => 
+                <div className='homeLanguagesListColumnItem' key={key}>
+                  {this.languages(project)}
+                </div>
+              )}
+              </div>
+              <div className='homeLanguagesListColumn'>
+              {this.state.langColRight.map((project, key) => 
+                <div className='homeLanguagesListColumnItem' key={key}>
+                  {this.languages(project)}
+                </div>
+              )}
+              </div>
             </div>
           </div>
         </div>  
