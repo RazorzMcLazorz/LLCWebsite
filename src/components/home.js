@@ -53,6 +53,20 @@ class Home extends Component {
             <h1 className='homeName'>
               Nathaniel P. Young
             </h1>
+            <h5>
+              Frontend Developer
+            </h5>
+          </div>
+          <div className='homeGoal'>
+            <div className='homeGoalName'>
+              My Goal
+            </div>
+            <div className='homeGoalBody'>
+              I believe in simplicity to the user interface, but displaying all information to those users with out cluttering there screen.
+            </div>
+            <div className='homeGoalBody'>
+              This goal can never end as every project can spark new ideas and better ways to improve the user interface.
+            </div>
           </div>
           <div className='homeLanguages'>
             <div className='homeLanguagesName'>
