@@ -23,21 +23,21 @@ class Skills extends Component {
               </div>
             </div>
             <div className='skillsBox'>
+              <div className='skillsBoxHeader'>Python 2.7 - 3.0</div>
+              <div className='skillsBoxContent'>
+                <p>Python was the 3rd coding language I learned after C# and C++ and it came very natural to me and allowed me to understand more complicated methods such as loops, most of my Python coding was on repl.it  which I used as a baseline to create the Black Jack Game <a target='_blank' href='https://repl.it/@Razorz/BlackJack'>https://repl.it/@Razorz/BlackJack</a>, I than converted that to Javascript. the other thing I built with python used selenium python to create an automated system to do a diagnostic check on some of the websites always changing modules.</p>
+              </div>
+            </div>
+            <div className='skillsBox'>
               <div className='skillsBoxHeader'>HTML & CSS</div>
               <div className='skillsBoxContent'>
                 These Website languages is what I used to style and order this entire website, I use the SCSS style more than SASS but mostly just becasue its the newest version. HTML and CSS are pretty much straight forward its just align than style with CSS / SCSS, although I am still learning alot with CSS especially animations.
               </div>
             </div>
             <div className='skillsBox'>
-              <div className='skillsBoxHeader'>Python 2.7 - 3.0</div>
-              <div className='skillsBoxContent'>
-                Learned Python which I can build small games with, and websites with just it's not recommended so it's very useful in teaching myself how to build certain complex javascript I write it out in python if it works together I convert it to JavaScript speeding my production because JavaScript can be confusing and not fun when building complex so having the blueprint helps build it.
-              </div>
-            </div>
-            <div className='skillsBox'>
               <div className='skillsBoxHeader'>How long ive been coding...</div>
               <div className='skillsBoxContent'>
-                I can take a Website Assignment and using React build a completely functional websites fit with connections between a DataBase and the Website being able to respond to user logins / Admin logins using CSS and HTML make the Website look Decent built to your liking, and how you want it to look I can change to fit today's designs.
+                <p>My Coding Career started when I joined a Coding BootCamp called Bottega.tech in July of 2018 to October of 2018, where I graduated from the class and started working with a Company Called RoviTracker, I started working here November of 2018 till now.  My Experience level, in my opinion, is at a junior to mid-level as I'm at the point where I can create a fully functional website and iterate on it and make it follow specific guidelines, this website your reading this on doesn't use too much material-UI in it as I'm trying to show my React, Redux, SCSS skills.</p>
               </div>
             </div>
           </div>
