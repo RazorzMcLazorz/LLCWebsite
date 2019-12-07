@@ -19,7 +19,9 @@ class Skills extends Component {
             <div className='skillsBox'>
               <div className='skillsBoxHeader'>Javascript</div>
               <div className='skillsBoxContent'>
-                With JavaScript, I've spent about 6+ Weeks learning, building stuff on repl.it, CodePen, Visual Studio Code making the Basic Html CSS Websites, and React / Redux. React is what allows websites to be needed loaded once so its smooth transition between pages. With React I know how to manage the State and the this statement while within the class components. Redux is an addition to React to allow everything to be put into the store and distriputed to all files allowing seemless data transfer instead of importing.
+                <p>
+                  I Started to Learn Javascript after learning the basics of Python and HTML/CSS. and is where I started making small Console Projects on repl.it, then started with connecting HTML/CSS with Javascript, to make basic function website projects. Than brought React.JS into the mix creating a really good dynamic mix allowing me to create a simple more organized code base without having to manually modify the DOM. I practiced with React.JS for a few weeks getting the hang of the "this" statement and the React State, and Props, when I felt more comfortable with those types of methods, I went and included a new codebase as an addition to React and that is Redux allowing me to store variables in a Redux store that connects everywhere instead of duplicating it. with this knowledge, I spent making projects like Black Jack as a website hosted by Heroku, and many others.
+                </p>
               </div>
             </div>
             <div className='skillsBox'>
