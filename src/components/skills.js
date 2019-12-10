@@ -31,12 +31,6 @@ class Skills extends Component {
               </div>
             </div>
             <div className='skillsBox'>
-              <div className='skillsBoxHeader'>HTML & CSS</div>
-              <div className='skillsBoxContent'>
-                These Website languages is what I used to style and order this entire website, I use the SCSS style more than SASS but mostly just becasue its the newest version. HTML and CSS are pretty much straight forward its just align than style with CSS / SCSS, although I am still learning alot with CSS especially animations.
-              </div>
-            </div>
-            <div className='skillsBox'>
               <div className='skillsBoxHeader'>How long ive been coding...</div>
               <div className='skillsBoxContent'>
                 <p>My Coding Career started when I joined a Coding BootCamp called Bottega.tech in July of 2018 to October of 2018, where I graduated from the class and started working with a Company Called RoviTracker, I started working here November of 2018 till now.  My Experience level, in my opinion, is at a junior to mid-level as I'm at the point where I can create a fully functional website and iterate on it and make it follow specific guidelines, this website your reading this on doesn't use too much material-UI in it as I'm trying to show my React, Redux, SCSS skills.</p>
