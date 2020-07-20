@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../reducers/actions'
-import Footer from './parts/footer'
+import SkillCreator from './parts/skillCreator'
 import NavBar from './parts/navbar'
 
 class Skills extends Component {
