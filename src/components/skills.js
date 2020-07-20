@@ -51,6 +51,29 @@ class Skills extends Component {
               </div>
             </div>
             <div className='skillsBox'>
+              <div className='skillsBoxHeader'>HTML & CSS</div>
+              <div className='skillsBoxContent'>
+                <p>
+                  These Website languages is what I used to style and order this entire website, I
+                  use the SCSS style more than SASS but mostly just becasue its the newest version.
+                  HTML and CSS are pretty much straight forward its just align than style with CSS /
+                  SCSS, although I am still learning alot with CSS especially animations.
+                </p>
+              </div>
+            </div>
+            <div className='skillsBox'>
+              <div className='skillsBoxHeader'>React</div>
+              <div className='skillsBoxContent'>
+                <p>
+                  Learning React came as a necessity but quickly turned into a love for building in
+                  react, with most of the projects built from React, Webpack, and Bootstrap. with
+                  some of the projects, I tend to use Material-UI to show the ability to follow a
+                  design pattern, but mostly I like creating the component from scratch, and it
+                  helps develop my skills with everything.
+                </p>
+              </div>
+            </div>
+            <div className='skillsBox'>
               <div className='skillsBoxHeader'>How long ive been coding...</div>
               <div className='skillsBoxContent'>
                 <p>
