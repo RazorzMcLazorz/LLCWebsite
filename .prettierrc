@@ -2,8 +2,6 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": true,
   "jsxSingleQuote": true,
-  "no-duplicate-variable": [true, "check-parameters"],
-  "no-var-keyword": true,
   "printWidth": 100,
   "semi": false,
   "singleQuote": true,
