@@ -5,9 +5,7 @@ import Footer from './parts/footer'
 import { Link } from 'react-router-dom'
 
 class HomeMob extends Component {
-
-  state = {
-  }
+  state = {}
 
   // Swapp Original Website into this and this new one to mobile
 
@@ -15,9 +13,7 @@ class HomeMob extends Component {
     return (
       <div id='homeMob'>
         <div id='mobile'>
-          <div id='mobileName'>
-            Nathaniel P. Young
-          </div>
+          <div id='mobileName'>Nathaniel P. Young</div>
           <div id='mobileLinks'>
             <Link to='/projects' className='mobileLinkButtons'>
               Projects
@@ -33,14 +29,14 @@ class HomeMob extends Component {
             </Link>
           </div>
         </div>
-      <Footer/>
-    </div>
-    );
+        <Footer />
+      </div>
+    )
   }
 }
 
 const mapStateToProps = (state) => {
-    return state
+  return state
 }
-HomeMob = connect(mapStateToProps, actions)(HomeMob);
-export default HomeMob;
+HomeMob = connect(mapStateToProps, actions)(HomeMob)
+export default HomeMob

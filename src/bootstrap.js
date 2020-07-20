@@ -24,24 +24,27 @@ function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
-        {screen.width < 600 ?
-        <Switch>
-          <Route exact path="/" component={HomeMob}/>
-          <Route exact path="/login" component={Login}/>
-          <Route exact path="/contact" component={Contact}/>
-          <Route exact path="/projects" component={MobProjects}/>
-          <Route exact path="/skills" component={SkillsMob}/>
-        </Switch>:
-        <Switch>
-          <Route exact path="/" component={Home} />  
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/skills" component={Skills} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch>}
+        {screen.width < 600 ? (
+          <Switch>
+            <Route exact path='/' component={HomeMob} />
+            <Route exact path='/login' component={Login} />
+            <Route exact path='/contact' component={Contact} />
+            <Route exact path='/projects' component={MobProjects} />
+            <Route exact path='/skills' component={SkillsMob} />
+          </Switch>
+        ) : (
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/projects' component={Projects} />
+            <Route exact path='/skills' component={Skills} />
+            <Route exact path='/login' component={Login} />
+            <Route exact path='/contact' component={Contact} />
+          </Switch>
+        )}
       </BrowserRouter>
-    </Provider>
-    , document.querySelector('.app-wrapper'))
+    </Provider>,
+    document.querySelector('.app-wrapper')
+  )
 }
 
 document.addEventListener('DOMContentLoaded', main)

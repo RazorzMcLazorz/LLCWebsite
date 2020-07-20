@@ -1,5 +1,5 @@
 // webpack plugins
-const SplitChunksPlugin = require('webpack/lib/optimize/SplitChunksPlugin');
+const SplitChunksPlugin = require('webpack/lib/optimize/SplitChunksPlugin')
 
 module.exports = {
   entry: {
@@ -44,4 +44,4 @@ module.exports = {
       minChunks: Infinity,
     }),
   ],
-};
+}
