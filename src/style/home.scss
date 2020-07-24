@@ -125,6 +125,33 @@
       }
     }
   }
+  #homeRightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 18;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    a > img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      animation: RotationsB linear 1s;
+      animation-iteration-count: 1;
+      transform-origin: 50% 50%;
+      background-color: unset;
+      &:hover {
+        animation: Rotations linear 1s;
+        animation-iteration-count: 1;
+        transform-origin: 50% 50%;
+        background-color: unset;
+      }
+    }
+  }
 }
 
 @keyframes nameAnime{
@@ -232,5 +259,23 @@
   }
   100% {
     transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
+  }
+}
+
+@keyframes Rotations{
+  0% {
+    transform:  rotate(-180deg) ;
+  }
+  100% {
+    transform:  rotate(0deg) ;
+  }
+}
+
+@keyframes RotationsB{
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  100% {
+    transform:  rotate(-180deg) ;
   }
 }

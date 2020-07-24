@@ -102,6 +102,11 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        <div id='homeRightSide'>
+          <a href='/contact'>
+            <img src='assets/Logo 1.png' />
+          </a>
+        </div>
       </div>
     )
   }
