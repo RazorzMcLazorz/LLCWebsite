@@ -49,7 +49,58 @@ class Home extends Component {
         </div>
         <div id='homeBody'>
           <div className='homeNameBox'>
-            <h1 className='homeName'>Nathaniel P. Young</h1>
+            <h1 className='homeName'>
+              <span>
+                N
+              </span>
+              <span>
+                a
+              </span>
+              <span>
+                t
+              </span>
+              <span>
+                h
+              </span>
+              <span>
+                a
+              </span>
+              <span>
+                n
+              </span>
+              <span>
+                i
+              </span>
+              <span>
+                e
+              </span>
+              <span>
+                l
+              </span>
+              <pre> </pre>
+              <span>
+                P
+              </span>
+              <span>
+                .
+              </span>
+              <pre> </pre>
+              <span>
+                Y
+              </span>
+              <span>
+                o
+              </span>
+              <span>
+                u
+              </span>
+              <span>
+                n
+              </span>
+              <span>
+                g
+              </span>
+            </h1>
             <h5>Frontend Developer</h5>
           </div>
           <div className='homeGoal'>
