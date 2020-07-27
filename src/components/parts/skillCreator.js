@@ -12,6 +12,14 @@ class SkillCreator extends Component {
     console.log(summary)
     let sum2 = summary.split('[[')
     console.log(sum2)
+    if (sum2.length <= 1) {
+      return summary
+    }
+    else {
+      for(i = 0; i < sum2.length; i++) {
+        
+      }
+    }
   }
 
   render() {

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../reducers/actions'
 import SkillCreator from './parts/skillCreator'
+import { skills } from './values/skillValues'
 import NavBar from './parts/navbar'
 
 class Skills extends Component {
@@ -15,12 +16,17 @@ class Skills extends Component {
         <NavBar />
         <div id='skillsDetails'>
           <div className='skillsMiddle'>
+            {skills.map((i) => {
+            <div className='skillsBox' key={i}>
+              <SkillCreator summary={i.summary} title={i.title} />
+            </div>})
+            }
             <div className='skillsBox'>
               <div className='skillsBoxHeader'>Javascript</div>
               <div className='skillsBoxContent'>
                 <p>
                   I Started to Learn Javascript after learning the basics of Python and HTML/CSS.
-                  and is where I started making small Console Projects on repl.it, then started with
+                  and it's where I started making small Console Projects on repl.it, then started with
                   connecting HTML/CSS with Javascript, to make basic function website projects. Than
                   brought React.JS into the mix creating a really good dynamic mix allowing me to
                   create a simple more organized code base without having to manually modify the
