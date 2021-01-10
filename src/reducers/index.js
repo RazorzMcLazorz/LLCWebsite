@@ -4,10 +4,10 @@ import { ADD_ARTICLE, CHANGE_STATE } from './constants/action-types'
 const initialState = {
   email: '',
   password: '',
-  bestProject: ['blackjack'],
-  currentProject: ['hjreptiles', 'medicy'],
+  bestProject: ['wbcf'],
+  currentProject: ['medicy'],
   pastOtherProject: ['ww1Sim'],
-  pastPersonalProject: ['wwOutpostSingle', 'blackjack', 'madlibs'],
+  pastPersonalProject: ['wbcf', 'wwOutpostSingle', 'blackjack', 'madlibs'],
   projects: {
     title: {
       blackjack: 'Black Jack',
@@ -16,6 +16,7 @@ const initialState = {
       madlibs: 'Bottega Madlibs',
       hjreptiles: 'HJReptiles',
       medicy: 'Medicy',
+      wbcf: "Wolf's Bane Cabinetry and Furniture",
     },
     link: {
       blackjack: 'https://black-jack-website.herokuapp.com/',
@@ -24,6 +25,7 @@ const initialState = {
       madlibs: 'https://madlibschallenge.herokuapp.com/',
       hjreptiles: '',
       medicy: 'https://medicy.herokuapp.com/',
+      wbcf: 'https://wbcf.herokuapp.com/',
     },
     dedicate: {
       blackjack: '',
@@ -32,6 +34,7 @@ const initialState = {
       madlibs: '',
       hjreptiles: '',
       medicy: '',
+      wbcf: '',
     },
     github: {
       blackjack: 'https://github.com/RazorzMcLazorz/BlackJackWebsite',
@@ -40,6 +43,7 @@ const initialState = {
       madlibs: 'https://github.com/RazorzMcLazorz/Madlibs',
       hjreptiles: 'https://github.com/RazorzMcLazorz/HJReptiles',
       medicy: 'https://github.com/RazorzMcLazorz/Medicy',
+      wbcf: 'https://github.com/RazorzMcLazorz/wbcf',
     },
     summary: {
       blackjack:
@@ -53,7 +57,9 @@ const initialState = {
       hjreptiles:
         'This is one of my clients websites im currently working on, right now we are in the Drafting stage so i have no pictures to display. But this website will be where he can show off all his Reptiles and sell them to his clients.',
       medicy:
-        'A City Builder Game placed inside medieval times, and the ability, to manage your city from the ground up. this is currently in building stages. and not fully complete you can see the current progress with the links on the left.',
+        'A City Builder Game placed inside medieval times, and the ability, to manage your city from the ground up. this is currently in the building stages. and not fully complete you can see the current progress with the links on the left. This one has been worked on in the free time for fun here and there not a primary project. I would like to move it to a mobile app using react-native.',
+      wbcf:
+        'I wanted to build a custom-built landing store page for one of my friends, so I showed him things and he picked out what he liked, essentially this website is cabinetry and furniture showing pure designs, I will note none of the pictures are real photos they were all free to use stock photos.',
     },
     date: {
       blackjack: 'Sep/1/2018 - Oct/15/2018',
@@ -62,6 +68,7 @@ const initialState = {
       madlibs: 'Sep/2018 - Oct/2018',
       hjreptiles: 'Planning stages',
       medicy: 'Apr/05/2020 - current',
+      wbcf: 'Aug/10/2020 - Jan/10/2021',
     },
   },
 }

@@ -1,0 +1,11 @@
+$randomNumber: random(100);
+$randomNumbers: random(100);
+
+@keyframes energyFalling{
+  0% {
+    transform:  translate($randomNumber + vw,0vh);
+  }
+  100% {
+    transform:  translate($randomNumbers + vw,100vh);
+  }
+}

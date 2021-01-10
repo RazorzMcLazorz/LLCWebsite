@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../reducers/actions'
-import Footer from './parts/footer'
+import EnergyFall from './parts/energyFall'
 import { Link } from 'react-router-dom'
 
 class Home extends Component {
@@ -32,7 +32,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div id='home'>
+      <div id='home' className='energyBackground'>
         <div id='homeNav'>
           <Link to='projects' className='homeNavLink'>
             Projects
