@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-router",
+  "name": "nateyoungdev",
   "version": "1.0.0",
-  "description": "Basic skeleton codebase for React/Redux/Router applications.",
+  "description": "",
   "scripts": {
     "preinstall": "npm set audit false",
     "postinstall": "cp env.example.js env.js",
@@ -30,12 +30,12 @@
   "engines": {
     "node": "13.1.0"
   },
-  "author": "Your Name Here",
+  "author": "Nathaniel P Young",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bottega-code-school/js-builder/issues"
+    "url": "https://github.com/RazorzMcLazorz/LLCWebsite/issues"
   },
-  "homepage": "https://github.com/bottega-code-school/js-builder",
+  "homepage": "https://github.com/RazorzMcLazorz/LLCWebsite",
   "dependencies": {
     "ajv": "^5.5.2",
     "autoprefixer": "^9.7.2",

@@ -1,0 +1,15 @@
+{
+  "short_name": "nateyoungdev",
+  "name": "Nates Portfolio LLC",
+  "icons": [
+    {
+      "src": "image/png",
+      "sizes": "64x64 32x32 24x24 16x16 192x192 512x512",
+      "type": "static/assets/Logo 1.png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

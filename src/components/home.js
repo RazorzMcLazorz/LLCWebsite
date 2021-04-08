@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../reducers/actions'
-import EnergyFall from './parts/energyFall'
 import { Link } from 'react-router-dom'
+import NameSigned from './parts/nameSigned'
 
 class Home extends Component {
   state = {
@@ -103,6 +103,7 @@ class Home extends Component {
           </div>
         </div>
         <div id='homeRightSide'>
+          <NameSigned />
           <a href='/contact'>
             <img src='assets/Logo 1.png' />
           </a>

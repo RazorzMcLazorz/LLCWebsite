@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import * as actions from '../reducers/actions'
 import Footer from './parts/footer'
 import { Link } from 'react-router-dom'
+import NameSigned from './parts/nameSigned'
 
 class HomeMob extends Component {
   state = {}
@@ -36,6 +37,7 @@ class HomeMob extends Component {
             </h4>
           </div>
           <h6>Frontend Developer</h6>
+          <NameSigned />
           <div id='mobileLogo'>
             <img src='assets/Logo 1.png' />
           </div>
