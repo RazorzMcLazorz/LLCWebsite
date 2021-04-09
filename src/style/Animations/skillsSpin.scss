@@ -17,17 +17,28 @@
     }
   }
   .spin {
-    transition-delay: 2s;
-    animation: spinAround 6s linear infinite;
+    animation: spinAround 10s linear infinite;
+  }
+  .spinInner {
+    animation: spinAroundInner 10s linear infinite;
   }
 }
 
 @keyframes spinAround {
   from {
-    transform: rotate(0deg) translate(120px);
+    transform: rotate(0deg) translate(180px);
   }
   to {
-    transform: rotate(360deg) translate(120px);
+    transform: rotate(360deg) translate(180px);
+  }
+}
+
+@keyframes spinAroundInner {
+  from {
+    transform: rotate(360deg) translate(100px);
+  }
+  to {
+    transform: rotate(0deg) translate(100px);
   }
 }
 
