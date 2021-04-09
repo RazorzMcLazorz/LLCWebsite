@@ -4,6 +4,7 @@ import * as actions from '../reducers/actions'
 import SkillCreator from './parts/skillCreator'
 import { skills } from './values/skillValues'
 import NavBar from './parts/navbar'
+import SkillsSpin from './parts/SkillsSpin'
 
 class Skills extends Component {
   state = {
@@ -16,20 +17,21 @@ class Skills extends Component {
         <NavBar />
         <div id='skillsDetails'>
           <div className='skillsMiddle'>
+            <SkillsSpin />
             {skills.map((i) => {
-            <div className='skillsBox' key={i}>
-              <SkillCreator summary={i.summary} title={i.title} />
-            </div>})
-            }
+              ;<div className='skillsBox' key={i}>
+                <SkillCreator summary={i.summary} title={i.title} />
+              </div>
+            })}
             <div className='skillsBox'>
               <div className='skillsBoxHeader'>Javascript</div>
               <div className='skillsBoxContent'>
                 <p>
                   I Started to Learn Javascript after learning the basics of Python and HTML/CSS.
-                  and it's where I started making small Console Projects on repl.it, then started with
-                  connecting HTML/CSS with Javascript, to make basic function website projects. Than
-                  brought React.JS into the mix creating a really good dynamic mix allowing me to
-                  create a simple more organized code base without having to manually modify the
+                  and it's where I started making small Console Projects on repl.it, then started
+                  with connecting HTML/CSS with Javascript, to make basic function website projects.
+                  Than brought React.JS into the mix creating a really good dynamic mix allowing me
+                  to create a simple more organized code base without having to manually modify the
                   DOM. I practiced with React.JS for a few weeks getting the hang of the "this"
                   statement and the React State, and Props, when I felt more comfortable with those
                   types of methods, I went and included a new codebase as an addition to React and
