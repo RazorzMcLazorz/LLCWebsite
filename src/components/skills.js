@@ -18,11 +18,11 @@ class Skills extends Component {
         <div id='skillsDetails'>
           <div className='skillsMiddle'>
             <SkillsSpin />
-            {skills.map((i) => {
+            {/* {skills.map((i) => {
               ;<div className='skillsBox' key={i}>
                 <SkillCreator summary={i.summary} title={i.title} />
               </div>
-            })}
+            })} */}
             <div className='skillsBox'>
               <div className='skillsBoxHeader'>Javascript</div>
               <div className='skillsBoxContent'>
