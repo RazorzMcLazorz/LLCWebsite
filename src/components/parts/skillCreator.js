@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../../reducers/actions'
-import { Link } from 'react-router-dom'
 
 /**
  * @param title string
@@ -14,11 +13,8 @@ class SkillCreator extends Component {
     console.log(sum2)
     if (sum2.length <= 1) {
       return summary
-    }
-    else {
-      for(i = 0; i < sum2.length; i++) {
-        
-      }
+    } else {
+      for (i = 0; i < sum2.length; i++) {}
     }
   }
 

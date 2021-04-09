@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../reducers/actions'
-import SkillCreator from './parts/skillCreator'
-import { skills } from './values/skillValues'
 import NavBar from './parts/navbar'
-import SkillsSpin from './parts/SkillsSpin'
+import SkillsSpin from './parts/skillsSpin'
 
 class Skills extends Component {
   state = {
@@ -18,11 +16,6 @@ class Skills extends Component {
         <div id='skillsDetails'>
           <div className='skillsMiddle'>
             <SkillsSpin />
-            {/* {skills.map((i) => {
-              ;<div className='skillsBox' key={i}>
-                <SkillCreator summary={i.summary} title={i.title} />
-              </div>
-            })} */}
             <div className='skillsBox'>
               <div className='skillsBoxHeader'>Javascript</div>
               <div className='skillsBoxContent'>
