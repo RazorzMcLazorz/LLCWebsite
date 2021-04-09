@@ -6,8 +6,17 @@ import NameSigned from './parts/nameSigned'
 
 class Home extends Component {
   state = {
-    langColLeft: ['JavaScript', 'Node.js', 'TypeScript', 'React', 'Redux', 'MySQL', 'ClearDB'],
-    langColRight: ['HTML 5', 'CSS', 'SCSS', 'Bash Terminal', 'PowerShell', 'Command Prompt', 'C++'],
+    langColLeft: [
+      'React.js',
+      'Javascript',
+      'Python',
+      'HTML',
+      'SCSS',
+      'Typescript',
+      'Redux.js',
+      'REST',
+    ],
+    langColRight: ['AWS Amplify', 'BASH', 'ZSH', 'GIT', 'MySQL', 'Node.js', 'HTTP'],
     website: {
       JavaScript: 'https://www.javascript.com/',
       'Node.js': 'https://nodejs.org/en/',
@@ -74,12 +83,28 @@ class Home extends Component {
           <div className='homeGoal'>
             <div className='homeGoalName'>My Goal</div>
             <div className='homeGoalBody'>
+              I want to be a vital team member in your company, that's why I constantly have new
+              projects to work on all the time testing myself on new languages, Programing styles,
+              and messing with new technologies, and always reading up to the latest in tech news. I
+              have experience in being a frontend developer for 3+ years now, and currently, I'm a
+              frontend developer at Rovitracker and work on the critical frontend projects there. I
+              love react.js with a passion and it brings me joy to build projects in this framework.
+            </div>
+            <div className='homeGoalBody'>
               I believe in simplicity to the user interface, but displaying all information to those
               users with out cluttering there screen.
             </div>
             <div className='homeGoalBody'>
               This goal can never end as every project can spark new ideas and better ways to
               improve the user interface.
+            </div>
+            <div className='homeGoalName'>My Education</div>
+            <div className='homeGoalBody'>
+              Bottega is the coding boot camp i went to learn javascript and python.
+            </div>
+            <div className='homeGoalBody'>
+              UVU is the school I'm currently in and working towards a bachelors degree in computer
+              science.
             </div>
           </div>
           <div className='homeLanguages'>

@@ -37,6 +37,7 @@
     height: 100%;
     color: black;
     cursor: default;
+    overflow-y: auto;
     .homeNameBox {
       display: flex;
       flex-direction: column;
@@ -118,7 +119,7 @@
             text-decoration: none;
             color: lightgrey;
             &:hover {
-              color: white;
+              color: #44d9e6;
             }
           }
         }

@@ -7,9 +7,9 @@
     margin-right: 100px;
     background-color: #2a2a2a;
     color: white;
-    animation: animationFrames linear 1s;
-    animation-iteration-count: 1;
-    transform-origin: -100% 0%;
+    // animation: animationFrames linear 1s;
+    // animation-iteration-count: 1;
+    // transform-origin: -100% 0%;
     #allProjects {
         display: flex;
         flex-direction: column;
@@ -89,14 +89,14 @@
     }
 }
 
-@keyframes animationFrames{
-    0% {
-        transform:  translate(0px,0px);
-    }
-    .1% {
-        transform:  translate(0px,100%);
-    }
-    100% {
-        transform:  translate(0px,0px);
-    }
-  }
+// @keyframes animationFrames{
+//     0% {
+//         transform:  translate(0px,0px);
+//     }
+//     .1% {
+//         transform:  translate(0px,100%);
+//     }
+//     100% {
+//         transform:  translate(0px,0px);
+//     }
+//   }
