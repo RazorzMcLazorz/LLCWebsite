@@ -4,11 +4,11 @@ import * as actions from '../../reducers/actions'
 
 const LanguageWordsOuter = [
   'React.js',
-  'Javascript',
+  'JavaScript',
   'Python',
   'HTML',
   'SCSS',
-  'Typescript',
+  'TypeScript',
   'Redux.js',
   'REST',
   'HTTP',
