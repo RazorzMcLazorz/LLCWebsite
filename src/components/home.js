@@ -64,6 +64,9 @@ class Home extends Component {
           <Link to='contact' className='homeNavLink'>
             Contact
           </Link>
+          <a href='https://github.com/RazorzMcLazorz' target='_blank'>
+            <i class='fab fa-github-square' style={{ fontSize: 40 }}></i>
+          </a>
         </div>
         <div id='homeBody'>
           <div className='homeNameBox'>
