@@ -1,6 +1,6 @@
 {
   "name": "nateyoungdev",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "scripts": {
     "preinstall": "npm set audit false",
@@ -37,6 +37,8 @@
   },
   "homepage": "https://github.com/RazorzMcLazorz/LLCWebsite",
   "dependencies": {
+    "@sentry/browser": "^6.2.5",
+    "@sentry/tracing": "^6.2.5",
     "ajv": "^5.5.2",
     "autoprefixer": "^9.7.2",
     "babel-cli": "^6.26.0",

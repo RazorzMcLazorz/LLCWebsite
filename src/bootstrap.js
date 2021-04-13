@@ -4,6 +4,8 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import reducers from './reducers'
+import * as Sentry from '@sentry/browser'
+import { Integrations } from '@sentry/tracing'
 
 import Home from './components/home'
 import Projects from './components/projects'
@@ -19,6 +21,14 @@ const createStoreWithMiddleware = applyMiddleware()(createStore)
 
 import 'bootstrap/dist/css/bootstrap.css'
 import './style/main.scss'
+
+Sentry.init({
+  dsn: 'https://b136804c52694113a4cf2700004f87f7@o570217.ingest.sentry.io/5716904',
+  integrations: [new Integrations.BrowserTracing()],
+  release: 'llcwebsite@1.1.0',
+  environment: location.hostname === 'nateyoungdev.herokuapp.com' ? 'live' : 'local',
+  tracesSampleRate: 1.0,
+})
 
 function main() {
   ReactDOM.render(
