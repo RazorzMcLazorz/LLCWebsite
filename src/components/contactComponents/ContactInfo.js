@@ -6,7 +6,9 @@ class ContactInfo extends Component {
   render() {
     return (
       <div className='ContactInfo'>
-        <div className='ContactInfoName'>My Contact Info</div>
+        <div className={this.props.isMobile ? 'ContactInfoNameMob' : 'ContactInfoName'}>
+          My Contact Info
+        </div>
         <div>You can find me at these links</div>
         <div className='MYLinks'>
           <a href='https://github.com/RazorzMcLazorz' target='_blank'>

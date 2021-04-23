@@ -16,6 +16,7 @@ import Contact from './components/contact'
 import HomeMob from './components/homeMob'
 import MobProjects from './components/mobProject'
 import SkillsMob from './components/skillsMob'
+import ContactMob from './components/contactMob'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore)
 
@@ -38,7 +39,7 @@ function main() {
           <Switch>
             <Route exact path='/' component={HomeMob} />
             <Route exact path='/login' component={Login} />
-            <Route exact path='/contact' component={Contact} />
+            <Route exact path='/contact' component={ContactMob} />
             <Route exact path='/projects' component={MobProjects} />
             <Route exact path='/skills' component={SkillsMob} />
           </Switch>

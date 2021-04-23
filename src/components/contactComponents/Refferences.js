@@ -25,7 +25,9 @@ class Refferences extends Component {
   render() {
     return (
       <div className='Refferences'>
-        <div className='RefferenceName'>Refferences</div>
+        <div className={this.props.isMobile ? 'ContactInfoNameMob' : 'RefferenceName'}>
+          Refferences
+        </div>
         {this.state.refferences.map((refference) => (
           <div className='RefferenceContainer'>
             <div>
