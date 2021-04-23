@@ -6,11 +6,13 @@
     display: flex;
     flex-direction: column;
     width: 75%;
+    margin-top: 150px;
   }
   .contactRightSide {
     display: flex;
     flex-direction: column;
     width: 25%;
+    margin-top: 150px;
   }
 }
 
@@ -19,7 +21,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 150px;
   .ContactInfoName {
     display: flex;
     width: 60%;

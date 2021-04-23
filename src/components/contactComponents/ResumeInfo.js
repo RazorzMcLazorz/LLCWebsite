@@ -3,15 +3,18 @@ import { connect } from 'react-redux'
 import * as actions from '../../reducers/actions'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 import Resume from '../../../static/assets/Resume.pdf'
+import print from 'print-js'
 
 class ResumeInfo extends Component {
   render() {
     return (
       <div className='ResumeInfo'>
         <div className='ResumeInfoName'>Resume</div>
-        <Document file={Resume} renderMode='canvas' renderTextLayer={false}>
-          <Page pageNumber={1} height={500} renderMode='canvas' renderTextLayer={false} />
-        </Document>
+        <div onClick={() => print(Resume)} className="pdfRender">
+          <Document file={Resume} renderMode='canvas' renderTextLayer={false}>
+            <Page pageNumber={1} height={500} renderMode='canvas' renderTextLayer={false} />
+          </Document>
+        </div>
       </div>
     )
   }
