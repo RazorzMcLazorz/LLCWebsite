@@ -1,0 +1,13 @@
+.ResumeInfo {
+  display: flex;
+  justify-content: center;
+  .ResumeInfoName {
+    display: flex;
+    width: 60%;
+    border: solid;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-color: #44d9e6;
+    margin-bottom: 15px;
+  }
+}
