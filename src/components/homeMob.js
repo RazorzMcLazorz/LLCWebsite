@@ -48,9 +48,6 @@ class HomeMob extends Component {
             <Link to='/skills' className='mobileLinkButtons'>
               My Skills
             </Link>
-            <Link to='/login' className='mobileLinkButtons'>
-              Login
-            </Link>
             <Link to='/contact' className='mobileLinkButtons'>
               Contact Me
             </Link>
