@@ -16,7 +16,7 @@ class Refferences extends Component {
         name: 'Taylor Millar',
         affiliation: 'Backend Developer at Rovitracker.inc',
         phoneNumber: '801-691-4362',
-        email: '',
+        email: 'millartaylor94@gmail.com',
         HIGTK: '',
       },
     ],
@@ -26,7 +26,7 @@ class Refferences extends Component {
     return (
       <div className='Refferences'>
         <div className={this.props.isMobile ? 'ContactInfoNameMob' : 'RefferenceName'}>
-          Refferences
+          References
         </div>
         {this.state.refferences.map((refference) => (
           <div className='RefferenceContainer'>
