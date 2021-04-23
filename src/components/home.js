@@ -58,9 +58,6 @@ class Home extends Component {
           <Link to='skills' className='homeNavLink'>
             Skills
           </Link>
-          <Link to='login' className='homeNavLink'>
-            Login
-          </Link>
           <Link to='contact' className='homeNavLink'>
             Contact
           </Link>
