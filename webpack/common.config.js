@@ -22,6 +22,11 @@ module.exports = {
       },
 
       {
+        test: /\.pdf$/,
+        use: 'file-loader?name=[path][name].[ext]',
+      },
+
+      {
         type: 'javascript/auto',
         test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
         loader: 'file-loader',
