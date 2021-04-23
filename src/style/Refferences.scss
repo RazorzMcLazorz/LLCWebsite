@@ -8,4 +8,19 @@
     border-color: #44d9e6;
     margin-bottom: 15px;
   }
+  .RefferenceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    .RefferenceDivder {
+      display: flex;
+      width: 60%;
+      border: solid;
+      border-width: 0px;
+      border-bottom-width: 1px;
+      border-color: #44d9e6;
+      padding: 15px;
+    }
+  }
 }
