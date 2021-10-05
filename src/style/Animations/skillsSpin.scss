@@ -1,7 +1,7 @@
 #skillsSpinContainer {
   display: grid;
   place-items: center;
-  height: 500px;
+  min-height: 500px;
   width: 500px;
   & > * {
     grid-column: 1;
