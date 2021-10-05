@@ -21,8 +21,8 @@ class ContactInfo extends Component {
             <i class='fab fa-linkedin'></i>
           </a>
         </div>
-        <div>Or</div>
-        <div className='MYLinksTop'>Manually message me at: </div>
+        <div>or</div>
+        <div className='MYLinksTop'>message me at:</div>
 
         <div className='MYLinksTop3' type='text' id='email' value='nateyoungdev@gmail.com'>
           nateyoungdev@gmail.com
