@@ -139,7 +139,7 @@ class Home extends Component {
         <div id='homeRightSide'>
           <NameSigned />
           <a href='/contact'>
-            <img src='assets/Logo 1.png' />
+            <img src='/favicon.ico' />
           </a>
         </div>
       </div>

@@ -39,7 +39,7 @@ class HomeMob extends Component {
           <h6>Frontend Developer</h6>
           <NameSigned />
           <div id='mobileLogo'>
-            <img src='assets/Logo 1.png' />
+            <img src='/favicon.ico' />
           </div>
           <div id='mobileLinks'>
             <Link to='/projects' className='mobileLinkButtons'>
