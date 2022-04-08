@@ -9,7 +9,7 @@ class Footer extends Component {
         {screen.width > 600 ? (
           <div id='footerDesktop'>
             <div id='footerLeft'>Created using React.js</div>
-            <div id='footerRight'>Version: 0.0</div>
+            <div id='footerRight'>Version: 1.1.1</div>
           </div>
         ) : (
           <div></div>

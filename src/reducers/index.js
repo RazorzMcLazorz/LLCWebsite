@@ -7,7 +7,7 @@ const initialState = {
   bestProject: ['wbcf'],
   currentProject: ['medicy'],
   pastOtherProject: ['ww1Sim'],
-  pastPersonalProject: ['wbcf', 'wwOutpostSingle', 'blackjack', 'madlibs'],
+  pastPersonalProject: ['medicyLegacy', 'wbcf', 'wwOutpostSingle', 'blackjack', 'madlibs'],
   projects: {
     title: {
       blackjack: 'Black Jack',
@@ -16,6 +16,7 @@ const initialState = {
       madlibs: 'Bottega Madlibs',
       hjreptiles: 'HJReptiles',
       medicy: 'Medicy',
+      medicyLegacy: 'Medicy Legacy',
       wbcf: "Wolf's Bane Cabinetry and Furniture",
     },
     link: {
@@ -25,6 +26,7 @@ const initialState = {
       madlibs: 'https://madlibschallenge.herokuapp.com/',
       hjreptiles: '',
       medicy: 'https://medicy.herokuapp.com/',
+      medicyLegacy: '',
       wbcf: 'https://wbcf.herokuapp.com/',
     },
     dedicate: {
@@ -34,6 +36,7 @@ const initialState = {
       madlibs: '',
       hjreptiles: '',
       medicy: '',
+      medicyLegacy: '',
       wbcf: '',
     },
     github: {
@@ -42,7 +45,8 @@ const initialState = {
       wwOutpostSingle: 'https://github.com/RazorzMcLazorz/WWOutpost',
       madlibs: 'https://github.com/RazorzMcLazorz/Madlibs',
       hjreptiles: 'https://github.com/RazorzMcLazorz/HJReptiles',
-      medicy: 'https://github.com/RazorzMcLazorz/Medicy',
+      medicy: 'https://github.com/RazorzMcLazorz/medicy',
+      medicyLegacy: 'https://github.com/RazorzMcLazorz/Medicy_Legacy',
       wbcf: 'https://github.com/RazorzMcLazorz/wbcf',
     },
     summary: {
@@ -57,7 +61,9 @@ const initialState = {
       hjreptiles:
         'This is one of my clients websites im currently working on, right now we are in the Drafting stage so i have no pictures to display. But this website will be where he can show off all his Reptiles and sell them to his clients.',
       medicy:
-        'A City Builder Game placed inside medieval times, and the ability, to manage your city from the ground up. this is currently in the building stages. and not fully complete you can see the current progress with the links on the left. This one has been worked on in the free time for fun here and there not a primary project. I would like to move it to a mobile app using react-native.',
+        "I wanted to challenge myself on making an RTS-style game in the browser with a language that isn't meant to build games, For the new stack is Typescript React and CSS, I chose these languages because I want to improve my ability to work with the basics, I'm not using any library like Material-UI because that just hides stuff away from me, and instead I wanted this to be my creation if I can keep it that way. The game is meant to be a basic you maintain your kingdom and its wealth that way it can be prosperous and I plan to have events happen that can devastate your kingdom. So it is up to the player how they maintain their kingdom.",
+      medicyLegacy:
+        'Medicy Legacy was the old version of Medicy, I ran into issues with the stack I was using at the time, so I have decided to just archive this project and restart some of it in medicy again.',
       wbcf:
         'I wanted to build a custom-built landing store page for one of my friends, so I showed him things and he picked out what he liked, essentially this website is cabinetry and furniture showing pure designs, I will note none of the pictures are real photos they were all free to use stock photos.',
     },
@@ -67,7 +73,8 @@ const initialState = {
       wwOutpostSingle: 'Sep/25/2018 - Dec/1/2018',
       madlibs: 'Sep/2018 - Oct/2018',
       hjreptiles: 'Planning stages',
-      medicy: 'Apr/05/2020 - current',
+      medicy: 'Mar/20/2022 - current',
+      medicyLegacy: 'Apr/05/2020 - Mar/20/2022',
       wbcf: 'Aug/10/2020 - Jan/10/2021',
     },
   },

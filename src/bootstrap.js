@@ -26,7 +26,7 @@ import './style/main.scss'
 Sentry.init({
   dsn: 'https://b136804c52694113a4cf2700004f87f7@o570217.ingest.sentry.io/5716904',
   integrations: [new Integrations.BrowserTracing()],
-  release: 'llcwebsite@1.1.0',
+  release: 'llcwebsite@1.1.1',
   environment: location.hostname === 'nateyoungdev.herokuapp.com' ? 'live' : 'local',
   tracesSampleRate: 1.0,
 })
